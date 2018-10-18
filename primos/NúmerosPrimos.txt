@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Compiler Math
+ */
+
+public class NumeroPrimo {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int numero; //Número a comprobar 
+        int a = 0; //Divisores exactos de un determinado número
+        System.out.println("Ingrese numero: ");
+        numero = sc.nextInt();
+        
+        for (int i = 1; i <= numero; i++) {
+            if(numero%i == 0) {
+                a++;
+            }
+        }
+        if(a ==2) {
+            System.out.println("Es primo");
+        } else {
+            System.out.println("No es primo");
+        }
+    }
+}
